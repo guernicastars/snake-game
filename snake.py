@@ -202,8 +202,8 @@ async def main():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("Snake")
     clock = pygame.time.Clock()
-    font = pygame.font.SysFont("menlo,monaco,monospace", 18)
-    big_font = pygame.font.SysFont("menlo,monaco,monospace", 40, bold=True)
+    font = pygame.font.Font(None, 22)
+    big_font = pygame.font.Font(None, 56)
 
     scene = "menu"
     selection = 0
