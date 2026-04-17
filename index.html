@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #14141a;
+      color: #f0f0f0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    canvas {
+      background: #14141a;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      image-rendering: pixelated;
+      outline: none;
+      touch-action: none;
+    }
+    .hint {
+      position: fixed;
+      bottom: 16px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="600" height="600" tabindex="0"></canvas>
+  <div class="hint">click the canvas first, then use arrows / WASD</div>
+  <script src="./snake.js"></script>
+</body>
+</html>
